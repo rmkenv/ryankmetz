@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore Ryan Kmetz's open-source GitHub projects: Python tools for climate analysis, geospatial data science, energy forecasting, environmental justice, and machine learning applications in sustainability.">
+    <meta name="keywords" content="Ryan Kmetz GitHub, open source climate tools, Python geospatial, environmental data science, energy analytics Python, solar panel detection, flood mapping, sustainability software">
+    <meta name="author" content="Ryan Kmetz">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ryankmetz.com/github.html">
+    <meta property="og:title" content="GitHub Projects - Ryan Kmetz | Open Source Climate & Data Tools">
+    <meta property="og:description" content="Open-source Python tools for climate analysis, geospatial data science, energy forecasting, and environmental justice applications.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ryankmetz.com/github.html">
+    <meta property="twitter:title" content="GitHub Projects - Ryan Kmetz">
+    <meta property="twitter:description" content="Open-source tools for climate, energy, and geospatial analysis.">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "GitHub Projects by Ryan Kmetz",
+        "description": "Open-source software projects for climate analysis, geospatial data science, energy forecasting, and environmental justice",
+        "author": {
+            "@type": "Person",
+            "name": "Ryan Kmetz",
+            "jobTitle": "Climate, Data, and Geospatial Expert",
+            "url": "https://ryankmetz.com",
+            "sameAs": [
+                "https://github.com/rmkenv",
+                "https://www.linkedin.com/in/ryankmetz/"
+            ]
+        },
+        "hasPart": [
+            {
+                "@type": "SoftwareSourceCode",
+                "name": "Bluesky Auto-Poster",
+                "description": "Automation for Bluesky Social with AI-generated hashtags",
+                "programmingLanguage": "Python",
+                "codeRepository": "https://github.com/rmkenv/bluesky_auto"
+            },
+            {
+                "@type": "SoftwareSourceCode",
+                "name": "HDD/CDD Calculator",
+                "description": "Python library for calculating Heating and Cooling Degree Days",
+                "programmingLanguage": "Python",
+                "codeRepository": "https://github.com/rmkenv/hdd-cdd-calculator"
+            }
+        ]
+    }
+    </script>
+
+    <title>GitHub Projects - Ryan Kmetz | Open Source Climate & Data Tools</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://ryankmetz.com/github.html">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Ryan Kmetz</a>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="github.html">GitHub</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="insights.html">Insights</a></li>
+                <li><a href="woodworking.html">Woodworking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>GitHub Projects</h1>
+        <p>Open-source tools for climate analysis, geospatial data science, and environmental applications</p>
+    </section>
+
+    <main class="container">
+        <section>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> > GitHub
+            </div>
+
+            <p>Welcome to my collection of open-source projects. All code is freely available on <a href="https://github.com/rmkenv" target="_blank" rel="noopener">GitHub @rmkenv</a>. These tools are designed to democratize access to environmental data analysis, energy modeling, and geospatial applications. Contributions and feedback are always welcome!</p>
+
+            <h2>Energy & Weather Analytics</h2>
+
+            <div class="card">
+                <h3>HDD/CDD Calculator</h3>
+                <p><strong>Language:</strong> Python | <strong>Status:</strong> PyPI Package</p>
+                <p>A powerful Python library for calculating Heating Degree Days (HDD) and Cooling Degree Days (CDD) using real weather data from the National Weather Service API. Essential for energy management, HVAC optimization, and climate analysis.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Calculate HDD and CDD for any location by latitude/longitude</li>
+                    <li>Support for custom base temperatures</li>
+                    <li>Retrieve degree day data for specific date ranges</li>
+                    <li>Simple API with robust error handling</li>
+                    <li>Built-in unit tests and type hints for reliability</li>
+                    <li>PyPI-ready: <code>pip install hdd-cdd-calculator</code></li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Energy management, facilities operations, HVAC analysis, research, weather analytics</p>
+
+                <p><a href="https://github.com/rmkenv/hdd-cdd-calculator" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Weather</span>
+                    <span class="tag">Energy</span>
+                    <span class="tag">NWS API</span>
+                </div>
+            </div>
+
+            <h2>Geospatial Analysis & Remote Sensing</h2>
+
+            <div class="card">
+                <h3>Solar Panel Detector (NAIP_PV)</h3>
+                <p><strong>Language:</strong> Python | <strong>Framework:</strong> YOLOv8</p>
+                <p>A web application that detects solar panels on residential homes using high-resolution aerial imagery. Supports NAIP multispectral imagery and Maryland Six Inch ultra high-res imagery for enhanced rooftop detection accuracy.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Upload local images or fetch imagery by drawing bounding boxes on interactive maps</li>
+                    <li>YOLOv8 segmentation model trained specifically for solar panels</li>
+                    <li>Support for 4-band multispectral imagery including NIR</li>
+                    <li>Compute spectral indices: NDVI, NDBI, SPSI, and Solar Photovoltaic Panel Index (SPPI)</li>
+                    <li>Automatic area calculation in pixels and square meters</li>
+                    <li>Interactive map interface with detection overlays</li>
+                    <li>Detection confidence scores and geolocation coordinates</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Renewable energy assessment, urban planning, solar adoption mapping, energy audits</p>
+
+                <p><a href="https://github.com/rmkenv/NAIP_PV" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">YOLOv8</span>
+                    <span class="tag">Remote Sensing</span>
+                    <span class="tag">Solar Energy</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Swimming Pool Detection (LAFires)</h3>
+                <p><strong>Language:</strong> Python | <strong>Platform:</strong> openEO</p>
+                <p>Automated swimming pool detection and analysis using Sentinel-2 satellite imagery and openEO. Features NDWI-based water detection, geolocation, and volume estimation for water management applications.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Automated pool detection using Sentinel-2 satellite imagery</li>
+                    <li>NDWI (Normalized Difference Water Index) calculation</li>
+                    <li>Reverse geocoding to obtain pool addresses</li>
+                    <li>Water volume estimation for detected pools</li>
+                    <li>Visualization using matplotlib</li>
+                    <li>Export results to CSV format</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Water resource management, urban planning, drought assessment, municipal water audits</p>
+
+                <p><a href="https://github.com/rmkenv/LAFires" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Sentinel-2</span>
+                    <span class="tag">openEO</span>
+                    <span class="tag">Water Management</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Open Source Web GIS (OS-ST-GIS)</h3>
+                <p><strong>Language:</strong> Python | <strong>Framework:</strong> Streamlit</p>
+                <p>A collection of geospatial tools and applications for data analysis and visualization using Streamlit. Makes geospatial analysis accessible and interactive for users of all technical levels.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Interactive mapping capabilities</li>
+                    <li>Data visualization tools</li>
+                    <li>Geospatial analysis functions (spatial joins, buffer creation)</li>
+                    <li>User-friendly Streamlit interface</li>
+                    <li>No installation required - runs in browser</li>
+                </ul>
+
+                <p><strong>Live Demo:</strong> <a href="https://os-st-gis-rmk.streamlit.app" target="_blank" rel="noopener">Try it now</a></p>
+
+                <p><a href="https://github.com/rmkenv/OS-ST-GIS" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">GIS</span>
+                    <span class="tag">Interactive</span>
+                </div>
+            </div>
+
+            <h2>Environmental Justice & Social Impact</h2>
+
+            <div class="card">
+                <h3>Environmental Justice Dataset Comparison (ejchat)</h3>
+                <p><strong>Language:</strong> Python | <strong>Framework:</strong> Streamlit</p>
+                <p>Interactive tool for comparing environmental justice datasets using Python and Streamlit. Enables users to explore disparities in environmental burden and benefits across communities.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Interactive comparison of EJ datasets</li>
+                    <li>Data visualization tools</li>
+                    <li>GitHub-hosted data for transparency</li>
+                    <li>Web-based interface for accessibility</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Environmental justice analysis, community advocacy, policy research, academic studies</p>
+
+                <p><a href="https://github.com/rmkenv/ejchat" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Environmental Justice</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Data Analysis</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>FEMA Data Analysis Chat (FEMADATAChat)</h3>
+                <p><strong>Language:</strong> Python | <strong>AI:</strong> Langchain + Google Gemini</p>
+                <p>Fetches and analyzes FEMA NFIP Claims data based on ZIP codes, utilizing Langchain and Google Generative AI to process and interact with the data intelligently.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Fetch FEMA NFIP Claims data using FEMA API</li>
+                    <li>Analyze and display data in tabular format</li>
+                    <li>Perform calculations and generate insights using Langchain tools</li>
+                    <li>Google Colab compatible</li>
+                    <li>AI-powered data interpretation</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Flood risk assessment, insurance analysis, climate resilience planning, emergency management</p>
+
+                <p><a href="https://github.com/rmkenv/FEMADATAChat" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Langchain</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">FEMA</span>
+                </div>
+            </div>
+
+            <h2>Community & Mapping Tools</h2>
+
+            <div class="card">
+                <h3>US Cooperatives Interactive Map (Coops_streamlit)</h3>
+                <p><strong>Language:</strong> Python | <strong>Libraries:</strong> Folium + Streamlit</p>
+                <p>Interactive map displaying over 1,000 US Cooperatives using Python, Folium, and Streamlit. Supports food security research and cooperative economy analysis.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Interactive mapping of 1000+ US Co-ops</li>
+                    <li>Search by name functionality</li>
+                    <li>Popup information display with contact details</li>
+                    <li>Zoom and pan capabilities</li>
+                    <li>Web-based accessibility</li>
+                </ul>
+
+                <p><strong>Use Cases:</strong> Food security research, cooperative economy analysis, community organizing, resource mapping</p>
+
+                <p><a href="https://github.com/rmkenv/Coops_streamlit" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Folium</span>
+                    <span class="tag">Mapping</span>
+                    <span class="tag">Cooperatives</span>
+                </div>
+            </div>
+
+            <h2>Social Media & Automation</h2>
+
+            <div class="card">
+                <h3>Bluesky Auto-Poster (bluesky_auto)</h3>
+                <p><strong>Language:</strong> Python | <strong>AI:</strong> Google Gemini</p>
+                <p>Automation for Bluesky Social with AI-generated hashtags using GitHub Actions, RSS feeds, and Google's Gemini AI. Maintains an active social media presence automatically.</p>
+
+                <h4>Key Features:</h4>
+                <ul>
+                    <li>Automated RSS-to-Bluesky posting</li>
+                    <li>Smart hashtag generation using Gemini AI</li>
+                    <li>Customizable posting schedule</li>
+                    <li>Built-in duplicate prevention</li>
+                    <li>Easy setup using GitHub Actions</li>
+                    <li>No server required - runs on GitHub infrastructure</li>
+                </ul>
+
+                <p><strong>Perfect for:</strong> Content creators, tech bloggers, news aggregators, community managers</p>
+
+                <p><a href="https://github.com/rmkenv/bluesky_auto" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">AI</span>
+                    <span class="tag">Automation</span>
+                    <span class="tag">Social Media</span>
+                </div>
+            </div>
+
+            <h2>Educational Resources</h2>
+
+            <div class="card">
+                <h3>Machine Learning for Energy & Emissions Newsletter Series</h3>
+                <p><strong>Language:</strong> Python | <strong>Content:</strong> Tutorials + Code Examples</p>
+                <p>Repository for newsletter series on Machine Learning for Energy & Emissions with comprehensive code examples and resources for practitioners.</p>
+
+                <h4>Topics Covered:</h4>
+                <ul>
+                    <li>ML workflow fundamentals for facilities</li>
+                    <li>Energy forecasting and load management</li>
+                    <li>Emissions tracking and reduction strategies</li>
+                    <li>Demand response integration</li>
+                    <li>Data collection and feature engineering best practices</li>
+                </ul>
+
+                <p><strong>Audience:</strong> Energy managers, data scientists, sustainability professionals, facilities engineers</p>
+
+                <p><a href="https://github.com/rmkenv/newsletter" target="_blank" rel="noopener" class="button">View on GitHub</a></p>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Energy</span>
+                    <span class="tag">Education</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contributing & Collaboration</h2>
+            <p>All projects are open source and welcome contributions! Whether you want to report bugs, suggest features, or submit pull requests, your involvement helps make these tools better for everyone.</p>
+
+            <h3>How to Contribute:</h3>
+            <ol>
+                <li>Fork the repository</li>
+                <li>Create your feature branch: <code>git checkout -b feature/AmazingFeature</code></li>
+                <li>Commit your changes: <code>git commit -m 'Add some AmazingFeature'</code></li>
+                <li>Push to the branch: <code>git push origin feature/AmazingFeature</code></li>
+                <li>Open a Pull Request</li>
+            </ol>
+
+            <h3>Connect with Me:</h3>
+            <ul>
+                <li><strong>GitHub:</strong> <a href="https://github.com/rmkenv" target="_blank" rel="noopener">@rmkenv</a></li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ryankmetz/" target="_blank" rel="noopener">Ryan Kmetz</a></li>
+                <li><strong>Bluesky:</strong> <a href="https://bsky.app/profile/ryankmetz.bsky.social" target="_blank" rel="noopener">@ryankmetz.bsky.social</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ryan Kmetz. All rights reserved.</p>
+        <p>Climate | Data | Geospatial</p>
+    </footer>
+</body>
+</html>
